@@ -9,13 +9,13 @@ public class baseChar {
 	// stats
 	int level;
 	int hp; 
-	int str;
-	int end;
-	int tel; // int
-	int wil;
-	int spd;
-	int dex;
-	int agi;
+	int str; // att multi
+	int end; // def multi
+	int tel; // int matt multi
+	int wil; // mdef multi
+	int spd; // spd in bat multi
+	int dex; // crit ch multi
+	int agi; // dodg ch multi
 	
 	
 	
