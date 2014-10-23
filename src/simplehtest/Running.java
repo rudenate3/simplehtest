@@ -17,6 +17,9 @@ public class Running {
 
 		Player h = new Player(input);
 		Battle b = new Battle();
+	
+		
+		
 
 		g_run = 1;
 		lfb = 1;
