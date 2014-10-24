@@ -15,31 +15,30 @@ public class Running {
 
 		String input = SCANNER.nextLine();
 
-		Player h = new Player(input);
+		//Player h = new Player(input);
 		Battle b = new Battle();
-	
+		hWar h = new hWar(input);
 		
 		
-
 		g_run = 1;
 		lfb = 1;
 		run(h, b);
 
 	}
 
-	private void run(Player h, Battle b) {
+	private void run(hWar h, Battle b) {
 		/*
 		 * while (g_run == 1){ int death = h.deathcheck(); if (death == 1) {
 		 * g_run = 0; }
 		 */
+		RandomEnc re = new RandomEnc();
 		while (g_run == 1) {
 
 			if ((lfb == 1) && (in_bat == 0)) {
-				RandomEnc re = new RandomEnc();
-				int h_lev = h.getP_level();
-				Enemy e = re.newBattle(h_lev);
+				
+				
 				lfb = 0;
-
+				Enemy e = re.newBattle(h.getLevel());
 				b.BattleBegin(h, e);
 				lfb = 1;
 			}

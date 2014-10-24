@@ -1,42 +1,64 @@
 package simplehtest;
 
-public class Enemy {
+import java.util.Random;
 
-	String e_name = "Jackson";
-	int e_level = 1;
-	int e_hp = 10;
-	int e_att = 2;
+public class Enemy extends baseEnemy {
 
-	public String getE_name() {
-		return e_name;
-	}
+  public void spawne5() {
+	  
+	  int i;
+	  i = randnum(1,3);
+	  System.out.println("Random number is " + i);
+	 
+	  switch(i) {
+	  		
+	  		case 1:  
+	  			this.setName("Gob");
+	  			this.setHp(15);
+	  			this.setStr(3);
+	  			System.out.println("Gob Spawned");
+	  			break;
+	  		case 2:  
+	  			this.setName("Og");
+	  			this.setHp(20);
+	  			this.setStr(4);
+	  			System.out.println("Og Spawned");
+	  			break;
+	  		case 3:  
+	  			this.setName("Bir");
+	  			this.setHp(10);
+	  			this.setStr(2);
+	  			System.out.println("Bir Spawned");
+	  			break;
+	  }
+	 
+	  
+  }
+	
 
-	public void setE_name(String e_name) {
-		this.e_name = e_name;
-	}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  private int randnum (int min, int max){
+	  // NOTE: Usually this should be a field rather than a method
+  
+  // variable so that it is not re-seeded every call.
+  Random rand = new Random();
 
-	public int getE_level() {
-		return e_level;
-	}
+  // nextInt is normally exclusive of the top value,
+  // so add 1 to make it inclusive
+  int randomNum = rand.nextInt((max - min) + 1) + min;
 
-	public void setE_level(int e_level) {
-		this.e_level = e_level;
-	}
-
-	public int getE_hp() {
-		return e_hp;
-	}
-
-	public void setE_hp(int e_hp) {
-		this.e_hp = e_hp;
-	}
-
-	public int getE_att() {
-		return e_att;
-	}
-
-	public void setE_att(int e_att) {
-		this.e_att = e_att;
-	}
-
+  return randomNum;
+  
+  }
 }

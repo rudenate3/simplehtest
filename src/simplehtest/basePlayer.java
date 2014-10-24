@@ -4,6 +4,8 @@ public class basePlayer extends baseChar {
 	
 	private int exp;
 	private int tnl;
+	private int wid;
+	
 	
 
 	

@@ -3,15 +3,16 @@ package simplehtest;
 
 public class Battle {
 
-	public void BattleBegin(Player h, Enemy e) {
+	public void BattleBegin(hWar h, Enemy e) {
 		// h setup
-		String h_name = h.getP_name();
-		int h_hp = h.getP_hp();
-		int h_att = h.getP_att();
+		String h_name = h.getName();
+		int h_hp = h.getHp();
+		int h_att = h.getStr();
 
 		// e setup
-		int e_hp = e.getE_hp();
-		int e_att = e.getE_att();
+		String e_name = e.getName();
+		int e_hp = e.getHp();
+		int e_att = e.getStr();
 
 		// Begins
 		System.out.println("The battle has begun");
@@ -36,7 +37,7 @@ public class Battle {
 
 			// e atts
 			h_hp = h_hp - e_att;
-			System.out.println("e atts for " + e_att);
+			System.out.println(e_name + " atts for " + e_att);
 			if (h_hp <= 0) {
 				System.out.println("e was victorious");
 				Running.in_bat = 0;
