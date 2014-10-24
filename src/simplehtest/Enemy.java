@@ -16,18 +16,21 @@ public class Enemy extends baseEnemy {
 	  			this.setName("Gob");
 	  			this.setHp(15);
 	  			this.setStr(3);
+	  			this.setRexp(3);
 	  			System.out.println("Gob Spawned");
 	  			break;
 	  		case 2:  
 	  			this.setName("Og");
 	  			this.setHp(20);
-	  			this.setStr(4);
+	  			this.setStr(5);
+	  			this.setRexp(5);
 	  			System.out.println("Og Spawned");
 	  			break;
 	  		case 3:  
 	  			this.setName("Bir");
 	  			this.setHp(10);
 	  			this.setStr(2);
+	  			this.setRexp(2);
 	  			System.out.println("Bir Spawned");
 	  			break;
 	  }

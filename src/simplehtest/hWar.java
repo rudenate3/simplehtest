@@ -9,5 +9,9 @@ public class hWar extends basePlayer {
 		this.setStr(5);
 	
 		
+		
+		this.setExp(0);
+		this.setTnl(20);
+		
 	}
 }
