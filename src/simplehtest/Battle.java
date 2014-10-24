@@ -64,6 +64,7 @@ public class Battle {
 		
 		
 		
+		
 		System.out.println("Recieved " + rewarded + " exp");
 		h.setExp(curexp + rewarded);
 		
