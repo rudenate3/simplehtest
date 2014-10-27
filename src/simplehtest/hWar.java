@@ -10,6 +10,11 @@ public class hWar extends basePlayer {
 	
 		
 		
+		equipArray[1] = 1;
+		
+		
+		
+		
 		this.setExp(0);
 		this.setTnl(20);
 		

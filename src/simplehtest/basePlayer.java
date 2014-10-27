@@ -5,10 +5,10 @@ public class basePlayer extends baseChar {
 	private int exp;
 	private int tnl;
 	private int wid;
+	private int loc;
 	
-	
-	
-	
+
+	protected int[] equipArray = new int[6];
 	
 	
 	
@@ -30,7 +30,12 @@ public class basePlayer extends baseChar {
 	public void setWid(int wid) {
 		this.wid = wid;
 	}
-	
+	public int getLoc() {
+		return loc;
+	}
+	public void setLoc(int loc) {
+		this.loc = loc;
+	}
 	
 
 	

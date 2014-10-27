@@ -3,7 +3,7 @@ package simplehtest;
 
 public class Battle {
 
-	public void BattleBegin(hWar h, Enemy e) {
+	public void BattleBegin(basePlayer h, Enemy e) {
 		// h setup
 		String h_name = h.getName();
 		int h_hp = h.getHp();
@@ -57,7 +57,7 @@ public class Battle {
 
 	}
 	
-	private void win(hWar h, Enemy e){
+	private void win(basePlayer h, Enemy e){
 		int rewarded = e.getRexp();
 		int curexp = h.getExp();
 		int curtnl = h.getTnl();
@@ -69,19 +69,25 @@ public class Battle {
 		h.setExp(curexp + rewarded);
 		
 		if (curexp >= curtnl){
-			System.out.println("Level Up");
-			h.setLevel(h.getLevel() + 1);
-			h.setTnl(curtnl * 2);
-			System.out.println(h.getName() + " went to level " + h.getLevel());
-			System.out.println(h.getExp() + "/" + h.getTnl() );
-			try {
-				Thread.sleep(4000); // 4000 milliseconds is one second.
-			} catch (InterruptedException ex) {
-				Thread.currentThread().interrupt();
-			}
+			levelUp(h, curtnl);
 		}
+	}
+
+	private void levelUp(basePlayer h, int curtnl) {
 		
-		 
+		
+		System.out.println("Level Up");
+		h.setLevel(h.getLevel() + 1);
+		h.setHp(h.getHp() + 10);
+		h.setStr(h.getStr() + 2);
+		h.setTnl(curtnl * 2);
+		System.out.println(h.getName() + " went to level " + h.getLevel());
+		System.out.println(h.getExp() + "/" + h.getTnl() );
+		try {
+			Thread.sleep(4000); // 4000 milliseconds is one second.
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
 	}
 
 }
