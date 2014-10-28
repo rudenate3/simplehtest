@@ -1,6 +1,6 @@
 package simplehtest;
 
-public class hWar extends basePlayer {
+public class hWar extends basePlayer implements intChar {
 
 	hWar(String name){
 		this.setName(name);
@@ -17,6 +17,12 @@ public class hWar extends basePlayer {
 		
 		this.setExp(0);
 		this.setTnl(20);
+		
+	}
+
+	@Override
+	public void nothing() {
+		// TODO Auto-generated method stub
 		
 	}
 }

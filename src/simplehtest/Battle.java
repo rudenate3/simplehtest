@@ -3,7 +3,7 @@ package simplehtest;
 
 public class Battle {
 
-	public void BattleBegin(basePlayer h, Enemy e) {
+	public void BattleBegin(intChar h, Enemy e) {
 		// h setup
 		String h_name = h.getName();
 		int h_hp = h.getHp();
@@ -57,7 +57,7 @@ public class Battle {
 
 	}
 	
-	private void win(basePlayer h, Enemy e){
+	private void win(intChar h, Enemy e){
 		int rewarded = e.getRexp();
 		int curexp = h.getExp();
 		int curtnl = h.getTnl();
@@ -73,7 +73,7 @@ public class Battle {
 		}
 	}
 
-	private void levelUp(basePlayer h, int curtnl) {
+	private void levelUp(intChar h, int curtnl) {
 		
 		
 		System.out.println("Level Up");

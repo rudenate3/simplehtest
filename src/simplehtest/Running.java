@@ -11,8 +11,8 @@ public class Running {
 
 	public void begin() {
 		
-		int clatyp = 0;
-
+		
+		
 		System.out.println("Name?");
 
 		String input = SCANNER.nextLine();
@@ -21,13 +21,17 @@ public class Running {
 			System.out.println("War, Mag, Rou?");
 			String clasel = SCANNER.nextLine();
 			
-		
-		
+			CharFactory charFactory = new CharFactory();
+			intChar h = charFactory.creCha(input,clasel);
+			
 
 		//Player h = new Player(input);
 		Battle b = new Battle();
-		hWar h = new hWar(input);
+	// hWar h = new hWar(input);
 		
+		System.out.println(h.getName());
+		System.out.println(h.getHp());
+		System.out.println(h.getStr());
 		
 		
 		g_run = 1;
@@ -47,7 +51,19 @@ public class Running {
 
 
 
-	private void run(basePlayer h, Battle b) {
+
+
+
+
+
+
+
+
+
+
+
+
+	private void run(intChar h, Battle b) {
 		/*
 		 * while (g_run == 1){ int death = h.deathcheck(); if (death == 1) {
 		 * g_run = 0; }
