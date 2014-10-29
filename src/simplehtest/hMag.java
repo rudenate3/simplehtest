@@ -19,10 +19,5 @@ public class hMag extends basePlayer implements intChar {
 		this.setTnl(20);
 	}
 
-	@Override
-	public void nothing() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

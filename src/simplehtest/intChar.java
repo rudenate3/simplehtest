@@ -1,7 +1,6 @@
 package simplehtest;
 
 public interface intChar {
-	void nothing();
 
 	String getName();
 

@@ -20,9 +20,5 @@ public class hWar extends basePlayer implements intChar {
 		
 	}
 
-	@Override
-	public void nothing() {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

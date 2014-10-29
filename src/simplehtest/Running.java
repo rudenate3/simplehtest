@@ -41,33 +41,7 @@ public class Running {
 	}
 
 
-
-
-		
-		
-		
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private void run(intChar h, Battle b) {
-		/*
-		 * while (g_run == 1){ int death = h.deathcheck(); if (death == 1) {
-		 * g_run = 0; }
-		 */
 		RandomEnc re = new RandomEnc();
 		while (g_run == 1) {
 
