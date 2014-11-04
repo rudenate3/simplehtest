@@ -1,5 +1,7 @@
 package simplehtest;
 
+
+
 public class hMag extends basePlayer implements intChar {
 
 	public hMag(String name) {
@@ -18,6 +20,7 @@ public class hMag extends basePlayer implements intChar {
 		this.setExp(0);
 		this.setTnl(20);
 	}
+
 
 
 }

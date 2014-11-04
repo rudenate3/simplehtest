@@ -1,5 +1,5 @@
 package simplehtest;
 
-public class Location {
+public enum dataEnemies {
 
 }

@@ -1,5 +1,7 @@
 package simplehtest;
 
+
+
 public interface intChar {
 
 	String getName();
@@ -22,4 +24,7 @@ public interface intChar {
 	void setStr(int i);
 
 	void setTnl(int i);
+	void setLoc(dataLocations l);
+	void setup();
+	
 }

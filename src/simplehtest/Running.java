@@ -33,7 +33,7 @@ public class Running {
 		System.out.println(h.getHp());
 		System.out.println(h.getStr());
 		
-		
+		h.setup();
 		g_run = 1;
 		lfb = 1;
 		run(h, b);
