@@ -1,6 +1,6 @@
 package simplehtest;
 
-public class baseEnemy extends baseChar {
+public class baseEnemy extends baseChar implements intEnem {
 
 	int rexp;
 

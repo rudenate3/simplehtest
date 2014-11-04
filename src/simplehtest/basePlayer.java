@@ -18,6 +18,7 @@ public class basePlayer extends baseChar {
 	public void setExp(int exp) {
 		this.exp = exp;
 	}
+
 	public int getTnl() {
 		return tnl;
 	}
